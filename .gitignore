@@ -1,3 +1,7 @@
+# main.sh and .env
+main.sh
+.env
+
 # Dependencies
 node_modules/
 vendor/
