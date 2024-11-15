@@ -2,6 +2,8 @@
 
 An empirical analysis of random number generation capabilities in Large Language Models (LLMs) compared to traditional random number generators.
 
+![alt text](imgs/normalized_response_distribution_comparison_all_methods.png)
+
 ## Project Overview
 
 This project investigates whether AI language models can produce truly random numbers when prompted. Through statistical analysis and visualization, we compare the randomness characteristics of various popular closed-source and open-source models against traditional pseudo-random number generators.
