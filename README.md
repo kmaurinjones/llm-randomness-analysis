@@ -4,7 +4,7 @@ An empirical analysis of random number generation capabilities in Large Language
 
 ## Project Overview
 
-This project investigates whether AI language models can produce truly random numbers when prompted. Through statistical analysis and visualization, we compare the randomness characteristics of various GPT-4 models against traditional pseudo-random number generators.
+This project investigates whether AI language models can produce truly random numbers when prompted. Through statistical analysis and visualization, we compare the randomness characteristics of various popular closed-source and open-source models against traditional pseudo-random number generators.
 
 ## Key Findings
 
@@ -21,6 +21,9 @@ This project investigates whether AI language models can produce truly random nu
 - gpt-4-0613
 - gpt-4o-2024-08-06
 - gpt-4o-mini-2024-07-18
+- llama-3.2-3b-instruct
+- gemma-2-9b-it
+- gemma-2-2b-it
 
 ### Traditional Random Number Generators
 - Python's built-in random module
@@ -61,7 +64,9 @@ While AI language models excel at generating human-like text, their ability to p
 
 ## Usage
 
-To replicate the results of this project for yourself, set your OpenAI API key in the `generate_numbers_llms.py` script and run the script.
+To replicate the results of this project for yourself, set your OpenAI API key in the `generate_numbers_llms.py` script and run the script. A CSV file will be generated in the `data/runs` directory.
+
+To generate results for local model (I used LM-Studio), run the `generate_numbers_llms_local.py` script and a similar CSV file will be generated in the `data/runs` directory.
 
 ## Requirements
 
@@ -82,4 +87,24 @@ For a detailed analysis of this project, check out the [full article on Medium](
 
 ## License
 
-[Specify license information]
+MIT License
+
+Copyright (c) 2024 Kai Maurin-Jones
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
